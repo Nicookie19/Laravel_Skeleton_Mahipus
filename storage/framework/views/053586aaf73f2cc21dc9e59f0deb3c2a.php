@@ -5,7 +5,27 @@
 </div>
 
 <div class="mb-4">
-    <a href="<?php echo e(route('students.index')); ?>" class="btn btn-outline">[← Back to Student List]</a>
+    <?php if (isset($component)) { $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.action-buttons','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('action-buttons'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+        <a href="<?php echo e(route('students.index')); ?>" class="btn btn-outline">[← Back to Student List]</a>
+     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $attributes = $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $component = $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
 </div>
 
 <div class="box">
@@ -65,8 +85,28 @@
         </div>
         
         <div class="mt-6">
-            <a href="<?php echo e(route('students.index')); ?>" class="btn btn-outline">[Cancel]</a>
-            <button type="submit" class="btn">[Update Student]</button>
+            <?php if (isset($component)) { $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.action-buttons','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('action-buttons'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+                <a href="<?php echo e(route('students.index')); ?>" class="btn btn-outline">[Cancel]</a>
+                <button type="submit" class="btn">[Update Student]</button>
+             <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $attributes = $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $component = $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
         </div>
     </form>
 </div>

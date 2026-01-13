@@ -38,5 +38,10 @@ Route::prefix('students')->name('students.')->group(function () {
     Route::put('/{id}', function ($id) {
         return redirect()->route('students.show', $id)->with('success', 'Student updated successfully!');
     })->name('update');
+
+    // Delete Student (DELETE)
+    Route::delete('/{id}', function ($id) {
+        return redirect()->route('students.index')->with('success', 'Student deleted successfully!');
+    })->name('destroy');
 });
 

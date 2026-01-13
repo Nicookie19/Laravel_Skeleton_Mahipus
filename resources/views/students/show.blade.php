@@ -7,7 +7,9 @@
 </div>
 
 <div class="mb-4">
-    <a href="{{ route('students.index') }}" class="btn btn-outline">[← Back to Student List]</a>
+    <x-action-buttons>
+        <a href="{{ route('students.index') }}" class="btn btn-outline">[← Back to Student List]</a>
+    </x-action-buttons>
 </div>
 
 <div class="box">
@@ -44,8 +46,11 @@
     </div>
 
     <div class="mt-6" style="border-top: 2px solid #ff6600; padding-top: 20px;">
-        <a href="{{ route('students.index') }}" class="btn btn-outline">[← Back to List]</a>
-        <a href="{{ route('students.edit', 1) }}" class="btn">[✏️ Edit Profile]</a>
+        <x-action-buttons>
+            <a href="{{ route('students.index') }}" class="btn btn-outline">[← Back to List]</a>
+            <a href="{{ route('students.edit', 1) }}" class="btn">[✏️ Edit Profile]</a>
+            <x-delete-form :studentId="1" />
+        </x-action-buttons>
     </div>
 </div>
 @endsection

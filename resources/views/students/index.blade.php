@@ -22,8 +22,11 @@
                 <td>BSIT</td>
                 <td>2nd Year</td>
                 <td>
-                    <a href="{{ route('students.show', 1) }}">[View]</a>
-                    <a href="{{ route('students.edit', 1) }}">[Edit]</a>
+                    <x-action-buttons>
+                        <a href="{{ route('students.show', 1) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="{{ route('students.edit', 1) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <x-delete-form :studentId="1" />
+                    </x-action-buttons>
                 </td>
             </tr>
             
@@ -32,8 +35,11 @@
                 <td>BSCS</td>
                 <td>3rd Year</td>
                 <td>
-                    <a href="{{ route('students.show', 2) }}">[View]</a>
-                    <a href="{{ route('students.edit', 2) }}">[Edit]</a>
+                    <x-action-buttons>
+                        <a href="{{ route('students.show', 2) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="{{ route('students.edit', 2) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <x-delete-form :studentId="2" />
+                    </x-action-buttons>
                 </td>
             </tr>
             
@@ -42,8 +48,11 @@
                 <td>BSIS</td>
                 <td>1st Year</td>
                 <td>
-                    <a href="{{ route('students.show', 3) }}">[View]</a>
-                    <a href="{{ route('students.edit', 3) }}">[Edit]</a>
+                    <x-action-buttons>
+                        <a href="{{ route('students.show', 3) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="{{ route('students.edit', 3) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <x-delete-form :studentId="3" />
+                    </x-action-buttons>
                 </td>
             </tr>
             
@@ -52,8 +61,11 @@
                 <td>BSIT</td>
                 <td>4th Year</td>
                 <td>
-                    <a href="{{ route('students.show', 4) }}">[View]</a>
-                    <a href="{{ route('students.edit', 4) }}">[Edit]</a>
+                    <x-action-buttons>
+                        <a href="{{ route('students.show', 4) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="{{ route('students.edit', 4) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <x-delete-form :studentId="4" />
+                    </x-action-buttons>
                 </td>
             </tr>
             
@@ -62,8 +74,11 @@
                 <td>BSCS</td>
                 <td>2nd Year</td>
                 <td>
-                    <a href="{{ route('students.show', 5) }}">[View]</a>
-                    <a href="{{ route('students.edit', 5) }}">[Edit]</a>
+                    <x-action-buttons>
+                        <a href="{{ route('students.show', 5) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="{{ route('students.edit', 5) }}" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <x-delete-form :studentId="5" />
+                    </x-action-buttons>
                 </td>
             </tr>
         </tbody>

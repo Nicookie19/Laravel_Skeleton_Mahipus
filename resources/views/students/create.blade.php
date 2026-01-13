@@ -64,8 +64,10 @@
         </div>
         
         <div class="mt-6">
-            <a href="{{ route('students.index') }}" class="btn btn-outline">[Cancel]</a>
-            <button type="submit" class="btn">[Add Student]</button>
+            <x-action-buttons>
+                <a href="{{ route('students.index') }}" class="btn btn-outline">[Cancel]</a>
+                <button type="submit" class="btn">[Add Student]</button>
+            </x-action-buttons>
         </div>
     </form>
 </div>

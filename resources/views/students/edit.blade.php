@@ -7,7 +7,9 @@
 </div>
 
 <div class="mb-4">
-    <a href="{{ route('students.index') }}" class="btn btn-outline">[← Back to Student List]</a>
+    <x-action-buttons>
+        <a href="{{ route('students.index') }}" class="btn btn-outline">[← Back to Student List]</a>
+    </x-action-buttons>
 </div>
 
 <div class="box">
@@ -67,8 +69,10 @@
         </div>
         
         <div class="mt-6">
-            <a href="{{ route('students.index') }}" class="btn btn-outline">[Cancel]</a>
-            <button type="submit" class="btn">[Update Student]</button>
+            <x-action-buttons>
+                <a href="{{ route('students.index') }}" class="btn btn-outline">[Cancel]</a>
+                <button type="submit" class="btn">[Update Student]</button>
+            </x-action-buttons>
         </div>
     </form>
 </div>

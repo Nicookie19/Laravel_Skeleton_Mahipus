@@ -20,8 +20,48 @@
                 <td>BSIT</td>
                 <td>2nd Year</td>
                 <td>
-                    <a href="<?php echo e(route('students.show', 1)); ?>">[View]</a>
-                    <a href="<?php echo e(route('students.edit', 1)); ?>">[Edit]</a>
+                    <?php if (isset($component)) { $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.action-buttons','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('action-buttons'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+                        <a href="<?php echo e(route('students.show', 1)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="<?php echo e(route('students.edit', 1)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <?php if (isset($component)) { $__componentOriginal838d685df97fa06f0dd63cf6cba769a2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.delete-form','data' => ['studentId' => 1]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('delete-form'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['studentId' => 1]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $attributes = $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $component = $__componentOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+                     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $attributes = $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $component = $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
                 </td>
             </tr>
             
@@ -30,8 +70,48 @@
                 <td>BSCS</td>
                 <td>3rd Year</td>
                 <td>
-                    <a href="<?php echo e(route('students.show', 2)); ?>">[View]</a>
-                    <a href="<?php echo e(route('students.edit', 2)); ?>">[Edit]</a>
+                    <?php if (isset($component)) { $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.action-buttons','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('action-buttons'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+                        <a href="<?php echo e(route('students.show', 2)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="<?php echo e(route('students.edit', 2)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <?php if (isset($component)) { $__componentOriginal838d685df97fa06f0dd63cf6cba769a2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.delete-form','data' => ['studentId' => 2]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('delete-form'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['studentId' => 2]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $attributes = $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $component = $__componentOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+                     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $attributes = $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $component = $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
                 </td>
             </tr>
             
@@ -40,8 +120,48 @@
                 <td>BSIS</td>
                 <td>1st Year</td>
                 <td>
-                    <a href="<?php echo e(route('students.show', 3)); ?>">[View]</a>
-                    <a href="<?php echo e(route('students.edit', 3)); ?>">[Edit]</a>
+                    <?php if (isset($component)) { $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.action-buttons','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('action-buttons'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+                        <a href="<?php echo e(route('students.show', 3)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="<?php echo e(route('students.edit', 3)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <?php if (isset($component)) { $__componentOriginal838d685df97fa06f0dd63cf6cba769a2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.delete-form','data' => ['studentId' => 3]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('delete-form'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['studentId' => 3]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $attributes = $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $component = $__componentOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+                     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $attributes = $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $component = $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
                 </td>
             </tr>
             
@@ -50,8 +170,48 @@
                 <td>BSIT</td>
                 <td>4th Year</td>
                 <td>
-                    <a href="<?php echo e(route('students.show', 4)); ?>">[View]</a>
-                    <a href="<?php echo e(route('students.edit', 4)); ?>">[Edit]</a>
+                    <?php if (isset($component)) { $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.action-buttons','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('action-buttons'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+                        <a href="<?php echo e(route('students.show', 4)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="<?php echo e(route('students.edit', 4)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <?php if (isset($component)) { $__componentOriginal838d685df97fa06f0dd63cf6cba769a2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.delete-form','data' => ['studentId' => 4]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('delete-form'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['studentId' => 4]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $attributes = $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $component = $__componentOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+                     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $attributes = $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $component = $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
                 </td>
             </tr>
             
@@ -60,8 +220,48 @@
                 <td>BSCS</td>
                 <td>2nd Year</td>
                 <td>
-                    <a href="<?php echo e(route('students.show', 5)); ?>">[View]</a>
-                    <a href="<?php echo e(route('students.edit', 5)); ?>">[Edit]</a>
+                    <?php if (isset($component)) { $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.action-buttons','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('action-buttons'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+                        <a href="<?php echo e(route('students.show', 5)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[View]</a>
+                        <a href="<?php echo e(route('students.edit', 5)); ?>" class="btn btn-outline" style="padding: 4px 8px; font-size: 12px;">[Edit]</a>
+                        <?php if (isset($component)) { $__componentOriginal838d685df97fa06f0dd63cf6cba769a2 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.delete-form','data' => ['studentId' => 5]] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('delete-form'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes(['studentId' => 5]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $attributes = $__attributesOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__attributesOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2)): ?>
+<?php $component = $__componentOriginal838d685df97fa06f0dd63cf6cba769a2; ?>
+<?php unset($__componentOriginal838d685df97fa06f0dd63cf6cba769a2); ?>
+<?php endif; ?>
+                     <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $attributes = $__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__attributesOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd)): ?>
+<?php $component = $__componentOriginalf9332b595ad3d3a806f9da4dda8769dd; ?>
+<?php unset($__componentOriginalf9332b595ad3d3a806f9da4dda8769dd); ?>
+<?php endif; ?>
                 </td>
             </tr>
         </tbody>
